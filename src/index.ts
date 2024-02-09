@@ -1,5 +1,6 @@
 import express from 'express';
 
 const app = express();
+const SERVER_PORT = process.env.SERVER_PORT;
 
-app.listen(5000, () => console.log(`Server is running :${5000} 🚀`));
+app.listen(SERVER_PORT, () => console.log(`Server is running :${SERVER_PORT} 🚀`));
